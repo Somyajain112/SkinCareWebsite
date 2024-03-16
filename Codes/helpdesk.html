@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html style="padding:20px;">
+<head>
+	<title>Origins Help Desk</title>
+  <link rel="stylesheet" type="text/css" href="helpdesk.css">
+</head>
+<body style="background-color: rgb(245, 243, 243);" >
+  <div style="background-color:white">
+  <div style="width: 100%;">
+    <img src="https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png" width="2%">
+    <div style="display: inline;padding-right: 1%;border-right: solid black 1px;">originsonlineservice@origins.com
+    </div>
+    <img src="https://png.pngtree.com/png-vector/20190909/ourmid/pngtree-phone-call-icon-vector-png-image_1725842.jpg"
+        width="2%">
+    <div style="display: inline;padding-right: 1%;border-right: solid black 1px">+91 99274828288</div>
+</div>
+<div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Origins_logo.png" style="width: 8%;">
+    <a href="https://goo.gl/maps/kMsDzqQRuPp3CKqW8" target="_blank">
+        <img src="https://www.shutterstock.com/image-vector/pin-icon-trendy-flat-style-600w-734507887.jpg"
+            style="float: right;width:40px;"></a>
+    <a id="location" href="https://goo.gl/maps/3ryXE7CEGXNh41CBA" target="_blank">Origins Cosmetics<br>NCR
+        Region</a>
+</div>
+<div id="Nav_bar" style="background-color: black;">
+    <a href="homepage.html" class="Nav_ele">Home</a>
+    <a href="aboutpage.html" class="Nav_ele">About</a>
+    <a href="exp.html" class="Nav_ele">Products</a>
+    <a href="orderpage.html" class="Nav_ele">Order page</a>
+    <a href="helpdesk.html" class="Nav_ele">Helpdesk</a>
+    <a href="Locations.html" class="Nav_ele">Stores</a>
+    <a href="login.html" class="Nav_ele">Login</a>
+    <a href="register.html" class="Nav_ele">Register</a>
+</div><br></div>
+    <div >
+		<form>
+      <h1 style="font-size:60px;">Help Desk!</h1>
+      <p>&nbsp;</p>
+			<label for="name">Name:</label>
+			<input style="height:30px;width:700px;" type="text" id="name" name="name" placeholder="Enter your name">
+        </br>
+        <label for="email" >Enter your E-mail:</label>
+        <input style="height:30px;width:700px;" type="email" id="email" name="email">
+        </br>
+        <p>&nbsp;</p>
+        </br>
+      </br>
+        <hr>
+        <div style="text-align:center;">
+        <div ><p><a href="myorder.html" style="color: #161716;font-size: larger;text-decoration: none;color:#161716">Cancel orders</a></p></div>
+        <hr>
+        <div class="popup5" onclick="myFunction5()"><b style="color:rgb(72, 72, 75);font-size: larger;">Login issue</b>
+          <span class="popuptext5" id="myPopup5"><ul>Here are some things to check:<li>Email Address: Your email address must be in the format username@domain.com (or .net, .org, etc.).</li><li>Mobile Phone Number: If you created your account with a mobile phone number,make sure that you're including your country code in your mobile phone number.</li><li>Password: Check CAPS Lock and NUM Lock on your keyboard. Passwords are case sensitive, so "PASSWORD" and "Password" are recognized as two different passwords. If you're sure you're using the correct email address or mobile phone number.</li></ul></span>
+          </div>
+          <script>
+          function myFunction5() {
+            var popup = document.getElementById("myPopup5");
+            popup.classList.toggle("show");
+          }
+          </script>
+          </br>
+          </br>
+          <hr>
+		<div class="popup1" onclick="myFunction1()"><b style="color:rgb(72, 72, 75);font-size: larger;">Payment Options</b>
+			<span class="popuptext1" id="myPopup1"><ul>Options available:<li>Cash on delivery</li><li>Online payment using paytm, phonepay etc</li><li>Using bank account</li><li>Using credit or debit card</li></ul></span>
+		  </div>
+		  <script>
+			function myFunction1() {
+			  var popup = document.getElementById("myPopup1");
+			  popup.classList.toggle("show");
+			}
+			</script>
+			</br>
+			</br>
+      <hr>
+			<div class="popup3" onclick="myFunction3()"><b style="color:rgb(72, 72, 75);font-size: larger;">Payment issues</b>
+				<span class="popuptext3" id="myPopup3"><ul>Reasons for failure:<li>you entered wrong credit or debit card details.</li><li>Internet issues</li><li>You closed or refreshed the page during transction</li><li>Your card may be blocked for online transaction.</li><li>If none please contact your bank directly.</li></ul>
+					 </span>
+			  </div>
+			  <script>
+				function myFunction3() {
+				  var popup = document.getElementById("myPopup3");
+				  popup.classList.toggle("show");
+				}
+				</script>
+			</br>
+		</br>
+    <hr>
+			<div class="popup2" onclick="myFunction2()"><b style="color:rgb(72, 72, 75);font-size: larger;">Declined Payment</b>
+				<span class="popuptext2" id="myPopup2">To protect your security,your bank can't provide origins with information about why your payment was declined.Contact your bank directly. </span>
+			  </div>
+			  <script>
+				function myFunction2() {
+				  var popup = document.getElementById("myPopup2");
+				  popup.classList.toggle("show");
+				}
+				</script>
+				</br>
+			</br>
+      <hr>
+				<div class="popup4" onclick="myFunction4()"><b style="color:rgb(72, 72, 75);font-size: larger;">Pricing of orders</b>
+					<span class="popuptext4" id="myPopup4">Our products affordable .Cost of a single product is set after discussing with our marketing team ,keeping people from every sector in mind.Price shown are inclusive of tax, cost of product and delivery charge.   </span>
+				  </div>
+				  <script>
+					function myFunction4() {
+					  var popup = document.getElementById("myPopup4");
+					  popup.classList.toggle("show");
+					}
+					</script>
+        </br>
+	</br>
+  <hr>
+  <div class="popup8" onclick="myFunction8()"><b style="color:rgb(72, 72, 75);font-size: larger;">Replace an item</b>
+    <span class="popuptext8" id="myPopup8"><ul>Steps to replace your order: <li>Go to your orders</li><li>Select return or replace items</li><li>Follow the instructions on the screen </li></ul></span>
+    </div>
+    <script>
+    function myFunction8() {
+      var popup = document.getElementById("myPopup8");
+      popup.classList.toggle("show");
+    }
+    </script>
+    </br>
+    </br>
+    <hr>
+  <div class="popup7" onclick="myFunction7()"><b style="color:rgb(72, 72, 75);font-size: larger;">Buying something bulky</b>
+    <span class="popuptext7" id="myPopup7">When you buy an item on originsonlineservice@origins.com and your item qualifies as a large, heavy item ,then it becomes eligible for our free scheduled delivery.</span>
+    </div>
+    <script>
+    function myFunction7() {
+      var popup = document.getElementById("myPopup7");
+      popup.classList.toggle("show");
+    }
+    </script>
+    </br>
+    </br>
+    <hr>
+    <div class="popup6" onclick="myFunction6()"><b style="color:rgb(72, 72, 75);font-size: larger;">Report something suspicious</b>
+    <span class="popuptext6" id="myPopup6"><ul> <li>Mail on @gmail.com </li><li>Call on 121296726082</li><li>Message at 99274828288</li></ul></span>
+    </div>
+    <script>
+    function myFunction6() {
+      var popup = document.getElementById("myPopup6");
+      popup.classList.toggle("show");
+    }
+    </script>
+    </br>
+    </br>
+  </div>
+	<div>
+    <p>&nbsp;</p>
+			<label for="message" style="font-size:larger">Tell us if there is something else you need.</label>
+			<textarea id="message" name="message" placeholder="Enter your message"></textarea>
+			<input type="submit" value="Submit"></div>
+		</form>
+    </br>
+		<p style="font-size: larger;">If you need immediate assistance, please call us at 121296726082.</p></div>
+    <div id='home_tail'>Location:<br>Origins Store, 20 Hudson Yards, New York,<br> NY 10001, United States<br>
+      QX3X+FM New York, USA<br>+121296726082<br><br>
+      <a href="https://www.instagram.com/origins/" class="tail_ele">
+          <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph-1200x1199.png" width="2%" style="padding-right:1% ;">Instagram</a>
+      <a href="https://www.facebook.com/Origins/" class="tail_ele">
+          <img src="623dd7d270712bdafc63c38a.png" width="2.5%"> Facebook</a>
+      <a href="https://www.youtube.com/@origins" class="tail_ele" style="border-right: none;">
+          <img src="https://cdn.logojoy.com/wp-content/uploads/20200406092725/youtube-icon.png" width="2.5%"> Youtube</a>
+          <br>
+          <p>© Copyright Origins Natural Resources, Inc.</p>
+</body>
+</html>

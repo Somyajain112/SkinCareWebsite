@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register-Origins</title>
+    <style>
+        table{
+            background-color:black;
+            border-radius: 5px;
+        }
+        td{
+            background-color: black;
+            width: 30%;
+            text-align: center;
+            font-family:'Poppins', sans-serif ;
+            border-radius: 5px;
+            font-size:x-large;
+        }
+        body{
+            background-color: silver;
+            margin-top: 5%;
+            margin-left: 20%;
+            margin-right: 20%;
+            color: silver;
+        }
+        input{
+            border-radius: 5px;
+            background-color: black;
+            border: solid silver 2px;
+            color: silver;
+        }
+        label{
+            float:left;
+            padding-left: 28%;
+            font-size: large;
+            margin-bottom: -1%;
+            padding-top: 2%;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            let Userid = document.forms["myForm"]["Userid"].value;
+            let Mobile = document.forms["myForm"]["Mobile"].value;
+            let E_mail = document.forms["myForm"]["E-mail"].value;
+            let Pwd = document.forms["myForm"]["Pwd"].value;
+            let Re_Pwd = document.forms["myForm"]["Re-Pwd"].value;
+    
+            if (Userid == "") {
+                alert("Please enter your Username.");
+                return false;
+            }
+            
+            if (Mobile == "") {
+                alert("Please enter your mobile number.");
+                return false;
+            }
+            
+            if (E_mail == "") {
+                alert("Please enter your E-mail.");
+                return false;
+            }
+            
+            if (Pwd == "" || Pwd != Re_Pwd) {
+                alert("Please enter valid/same passwords.");
+                return false;
+            }
+            
+            window.open("homepage.html");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <img src="valeriia-miller-_42NKYROG7g-unsplash.jpg" width="100%" style="border-radius: 5px;" alt="Skincare">
+            </td>
+            <td>
+                <big>Sign up for Origins</big><br>
+                <small>Create a new account</small><br><br>
+                <form name="myForm" onsubmit="return validateForm()">
+                    <label for="Userid">Username:</label><br>
+                    <input type="text" id="Userid" name="Userid"><br>
+                    <label for="Mobile">Mobile number:</label>
+                    <input type="tel" id="Mobile" name="Mobile"><br>
+                    <label for="E-mail">E-mail:</label><br>
+                    <input type="email" id="E-mail" name="E-mail"><br>
+                    <label for="Password">Password:</label><br>
+                    <input type="password" id="Pwd" name="Pwd"><br>
+                    <label for="Re-Pwd">Re-enter Password:</label><br>
+                    <input type="password" id="Re-Pwd" name="Re-Pwd"><br>
+                    <input type="submit" value="Register" style="background-color: black;margin: 2%;padding: 2% ;border-radius: 10px;font-family: 'Poppins', sans-serif;">
+                </form>
+                <p style="font-size: large;">Already have an account?<a href="login.html">Login</a></p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

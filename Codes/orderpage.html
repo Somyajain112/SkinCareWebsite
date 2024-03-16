@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Orderpage-Origins</title>
+    <link rel="stylesheet" href="frame.css">
+    <style>
+        #all_products{
+            display: flex;
+            flex-direction: column;
+            padding: 3%;
+        }
+        .products{
+            background-color:white;
+            display: flex;
+            flex-direction:row;
+            }
+        .images{
+            width: 30%;
+        }
+        .details{
+            width:70%;
+            text-align: left;
+            font-family : 'Futura-demi',sans-serif;
+        }
+        .name{
+            font-size: x-large;
+            font-weight: bolder;
+        }
+        .type{
+            font-size: large;
+            font-weight: bold;
+        }
+        .price{
+            font-size: x-large;
+        }
+        .sub_details{
+            font-size: large;
+        }
+        #total,#confirmation{
+            font-family : 'Futura-demi',sans-serif;
+            font-size: xx-large;
+            text-align: center;
+            background-color: black;
+            color: silver;
+            margin-bottom: 1%;
+            padding: 2%;
+            border-radius: 5px;
+        }
+        input{
+            background-color: black;
+            color: silver;
+            border: 2px solid silver;
+        }
+    </style>
+
+</head>
+<body>
+    <script src="orderpage.js">
+    </script>
+    <div style="width: 100%;">
+        <img src="https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png" width="2%">
+        <div style="display: inline;padding-right: 1%;border-right: solid black 1px;">originsonlineservice@origins.com
+        </div>
+        <img src="https://png.pngtree.com/png-vector/20190909/ourmid/pngtree-phone-call-icon-vector-png-image_1725842.jpg"
+            width="2%">
+        <div style="display: inline;padding-right: 1%;border-right: solid black 1px">+91 99274828288</div>
+    </div>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Origins_logo.png" style="width: 8%;">
+        <a href="https://goo.gl/maps/kMsDzqQRuPp3CKqW8" target="_blank">
+            <img src="https://www.shutterstock.com/image-vector/pin-icon-trendy-flat-style-600w-734507887.jpg"
+                style="float: right;width:40px;"></a>
+        <a id="location" href="https://goo.gl/maps/3ryXE7CEGXNh41CBA" target="_blank">Origins Cosmetics<br>NCR
+            Region</a>
+    </div>
+    <div id="Nav_bar" style="background-color: black;">
+        <a href="homepage.html" class="Nav_ele">Home</a>
+        <a href="aboutpage.html" class="Nav_ele">About</a>
+        <a href="exp.html" class="Nav_ele">Products</a>
+        <a href="orderpage.html" class="Nav_ele">Order page</a>
+        <a href="helpdesk.html" class="Nav_ele">Helpdesk</a>
+        <a href="Locations.html" class="Nav_ele">Stores</a>
+        <a href="login.html" class="Nav_ele">Login</a>
+        <a href="register.html" class="Nav_ele">Register</a>
+    </div>
+    <div id="all_products">
+
+<!-- Moisturizers -->
+
+    <div class="products">
+        <div class="images">
+            <img src="https://www.origins.com/media/export/cms/products/1000x1000/origins_sku_0XJ401_1000x1000_0.jpg" style="width: 60%;">
+        </div>
+        <div class="details">
+            <a class="name">GINZING™</a><br>
+            <a class="type">Energizing Gel Cream</a><br>
+            <a class="price">$36.00</a><br><br>
+            <a class="sub_details"><b>KEY INGREDIENTS:</b> Vitamin C, Niacinamide, Caffeine from Coffee Beans, Triple Panax Ginseng<br>
+                <b>SKIN TYPES:</b> Oily, Normal, Dry, Combination<br>
+                <b>BENEFIT:</b> 72-Hour Hydration, Increased Radiance
+            </a><br>
+            <button id="decrement" onclick="updateCounter('Gizing',-1)">-</button>
+            <span id="Gizing">0</span>
+            <button id="increment" onclick="updateCounter('Gizing',1)">+</button> 
+        </div>      
+    </div>
+
+    <div class="products">
+        <div class="images">
+            <img src="https://www.origins.com/media/export/cms/products/1000x1000/origins_sku_0NH801_1000x1000_0.jpg" style="width: 60%;">
+        </div>
+        <div class="details">
+            <a class="name">A PERFECT WORLD™</a><br>
+            <a class="type">SPF 40 Age-Defense Moisturizer With White Tea</a><br>
+            <a class="price">$52.00</a><br><br>
+            <a class="sub_details"><b>KEY INGREDIENTS:</b> White Tea, Cranberry Blend<br>
+                <b>SKIN TYPES:</b> Normal, Dry, Oily, Combination<br>
+                <b>BENEFIT:</b> Age Prevention & Protection
+            </a><br>
+            <button id="decrement" onclick="updateCounter('A PERFECT WORLD',-1)">-</button>
+            <span id='A PERFECT WORLD'>0</span>
+            <button id="increment" onclick="updateCounter('A PERFECT WORLD',1)">+</button> 
+        </div>      
+    </div>
+
+
+    <div class="products">
+        <div class="images">
+            <img src="https://www.origins.com/media/export/cms/products/1000x1000/origins_sku_0RP801_1000x1000_0.jpg" style="width: 60%;">
+        </div>
+        <div class="details">
+            <a class="name">HIGH-POTENCY NIGHT-A-MINS™</a><br>
+            <a class="type">Resurfacing Cream With Fruit-Derived AHAs</a><br>
+            <a class="price">$52.00</a><br><br>
+            <a class="sub_details"><b>KEY INGREDIENTS:</b> Fruit-Derived AHA's, Squalene<br>
+                <b>SKIN TYPES:</b> Dry, Combination<br>
+                <b>BENEFIT:</b> Rich Hydration, Renew & Refine
+            </a><br>
+            <button id="decrement" onclick="updateCounter('HIGH-POTENCY NIGHT-A-MINS',-1)">-</button>
+            <span id='HIGH-POTENCY NIGHT-A-MINS'>0</span>
+            <button id="increment" onclick="updateCounter('HIGH-POTENCY NIGHT-A-MINS',1)">+</button> 
+        </div>      
+    </div>
+
+    <div class="products">
+        <div class="images">
+            <img src="https://www.origins.com/media/export/cms/products/1000x1000/origins_sku_0RP801_1000x1000_0.jpg" style="width: 60%;">
+        </div>
+        <div class="details">
+            <a class="name">PLANTSCRIPTION™</a><br>
+            <a class="type">SPF 25 Power Anti-Aging Cream</a><br>
+            <a class="price">$73.00</a><br><br>
+            <a class="sub_details"><b>KEY INGREDIENTS:</b> Hyaluronic Acid, Anogeissus, Acetyl Hexapeptide, Brown Algae<br>
+                <b>SKIN TYPES:</b>  Dry, Combination<br>
+                <b>BENEFIT:</b> Line Reduction, UV Protection
+            </a><br>
+            <button id="decrement" onclick="updateCounter('PLANTSCRIPTION',-1)">-</button>
+            <span id='PLANTSCRIPTION'>0</span>
+            <button id="increment" onclick="updateCounter('PLANTSCRIPTION',1)">+</button> 
+        </div>      
+    </div>
+
+<!-- Eye care -->
+
+<div class="products">
+    <div class="images">
+        <img src="https://www.origins.com/media/export/cms/products/1000x1000/origins_sku_722B01_1000x1000_0.jpg" style="width: 60%;">
+    </div>
+    <div class="details">
+        <a class="name">EYE DOCTOR®</a><br>
+        <a class="type">Moisture Care For Skin Around Eyes</a><br>
+        <a class="price">$49.00</a><br><br>
+        <a class="sub_details"><b>KEY INGREDIENTS:</b>Cucumber<br>
+            <b>SKIN TYPES:</b>Normal, Dry, Oily, Combination<br>
+            <b>BENEFIT:</b> Hydrates Undereye
+        </a><br>
+        <button id="decrement" onclick="updateCounter('EYE DOCTOR',-1)">-</button>
+        <span id='EYE DOCTOR'>0</span>
+        <button id="increment" onclick="updateCounter('EYE DOCTOR',1)">+</button> 
+    </div>      
+</div>
+<div class="products">
+    <div class="images">
+        <img src="https://www.origins.com/media/export/cms/products/1000x1000/origins_sku_0WN001_1000x1000_0.jpg" style="width: 60%;">
+    </div>
+    <div class="details">
+        <a class="name">GINZING™ ON-THE-GO</a><br>
+        <a class="type">Vitamin C & Niacinamide Eye Cream To Brighten And Depuff</a><br>
+        <a class="price">$29.00</a><br><br>
+        <a class="sub_details"><b>KEY INGREDIENTS:</b> Vitamin C, Niacinamide, Ginseng, Caffeine from Coffee Beans<br>
+            <b>SKIN TYPES:</b> Normal, Dry, Oily, Combination<br>
+            <b>BENEFIT:</b>  Dark Circle & Puffiness Reduction, Hydration
+        </a><br>
+        <button id="decrement" onclick="updateCounter('GINZING ON-THE-GO',-1)">-</button>
+        <span id='GINZING ON-THE-GO'>0</span>
+        <button id="increment" onclick="updateCounter('GINZING ON-THE-GO',1)">+</button> 
+    </div>      
+</div>
+<div class="products">
+    <div class="images">
+        <img src="https://www.origins.com/media/export/cms/products/1000x1000/origins_sku_0ETR01_1000x1000_0.jpg" style="width: 60%;">
+    </div>
+    <div class="details">
+        <a class="name">WELL OFF®</a><br>
+        <a class="type">Fast And Gentle Eye Makeup Remover</a><br>
+        <a class="price">$27.00</a><br><br>
+        <a class="sub_details"><b>KEY INGREDIENTS:</b>  Gentle Cleansers<br>
+            <b>SKIN TYPES:</b> Normal, Dry, Oily, Combination<br>
+            <b>BENEFIT:</b> Gentle Eye Cleanse
+        </a><br>
+        <button id="decrement" onclick="updateCounter('WELL OFF',-1)">-</button>
+        <span id='WELL OFF'>0</span>
+        <button id="increment" onclick="updateCounter('WELL OFF',1)">+</button> 
+    </div>      
+</div>
+<div class="products">
+    <div class="images">
+        <img src="https://www.origins.com/media/export/cms/products/1000x1000/origins_sku_0T2J01_1000x1000_0.jpg" style="width: 60%;">
+    </div>
+    <div class="details">
+        <a class="name">DR. ANDREW WEIL FOR ORIGINS™</a><br>
+        <a class="type">Mega-Mushroom Relief & Resilience Soothing Gel Cream For Eyes</a><br>
+        <a class="price">$52.00</a><br><br>
+        <a class="sub_details"><b>KEY INGREDIENTS:</b>Reishi Mushroom, Holy Basil and Lady's Thistle Complex, Vitamin E<br>
+            <b>SKIN TYPES:</b>Sensitive, Dry, Normal, Oily
+        </a><br>
+        <button id="decrement" onclick="updateCounter('DR. ANDREW WEIL FOR ORIGINS',-1)">-</button>
+        <span id='DR. ANDREW WEIL FOR ORIGINS'>0</span>
+        <button id="increment" onclick="updateCounter('DR. ANDREW WEIL FOR ORIGINS',1)">+</button> 
+    </div>      
+</div>
+    </div>
+
+    <div id="total">
+        <a>Your Cart total is $<big id="Total">0</big></a><br>
+        <a style="font-size: x-large;">Enter your address:</a>
+        <form name="Address">
+            <label for="text" style="font-size: large;">Address Line 1:</label>
+            <input type="text" id="AddL1" name="AddL1" style="width: 40%;"><br>
+            <label for="text" style="font-size: large;">Address Line 2:</label>
+            <input type="text" id="AddL2" name="AddL2" style="width: 40%;"><br>
+            <input type="button" value="Place Order" onclick="return validateAdd()"
+            style="background-color:black;margin: 1%;padding: 0.8% ;border-radius: 5px;font-family: 'Poppins', sans-serif;">
+        </form>
+    </div>
+    <div id="confirmation" style="display: none;">
+        <a>Your order will be delivered to the address:</a><br>
+        <a id="add1"></a><br>
+        <input type="button" value="Confirm Order" onclick="window.open('confirmation.html','_self')"
+        style="background-color:black;margin: 1%;padding: 0.8% ;border-radius: 5px;font-family: 'Poppins', sans-serif;">
+        <input type="button" value="Cancel Order" onclick="location.reload()"
+        style="background-color:black;margin: 1%;padding: 0.8% ;border-radius: 5px;font-family: 'Poppins', sans-serif;">
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <div id='home_tail'>Location:<br>Origins Store, 20 Hudson Yards, New York,<br> NY 10001, United States<br>
+        QX3X+FM New York, USA<br>+121296726082<br><br>
+        <a href="https://www.instagram.com/origins/" class="tail_ele">
+            <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph-1200x1199.png" width="2%" style="padding-right:1% ;">Instagram</a>
+        <a href="https://www.facebook.com/Origins/" class="tail_ele">
+            <img src="623dd7d270712bdafc63c38a.png" width="2.5%"> Facebook</a>
+        <a href="https://www.youtube.com/@origins" class="tail_ele" style="border-right: none;">
+            <img src="https://cdn.logojoy.com/wp-content/uploads/20200406092725/youtube-icon.png" width="2.5%"> Youtube</a>
+            <br>
+            <p>© Copyright Origins Natural Resources, Inc.</p>
+    </div>
+</body>
+</html>

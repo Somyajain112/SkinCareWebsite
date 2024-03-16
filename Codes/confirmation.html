@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Order Confirmation</title>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+            font-family: 'Poppins',sans-serif;
+        }
+        input{
+            background-color: black;
+            border:solid 2px silver;
+            color: silver;
+            margin: 1%;
+            padding: 0.8% ;
+            border-radius: 8px;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<script>
+    function success(){
+        document.getElementById("loading").style.display='none';
+        document.getElementById("last").style.display='block';       
+    }
+    function loadCall(){
+        document.getElementById("qr").style.display='none';
+        document.getElementById("loading").style.display='block';
+        let successs=setTimeout(success,3000);
+    }
+</script>
+<body>
+    <div id="qr">
+    <img style="width: 20%;border-radius: 5px;margin-top: 10%;"
+    src="https://www.techopedia.com/wp-content/uploads/2023/03/aee977ce-f946-4451-8b9e-bba278ba5f13.png" alt='QR Code'><br>
+    <input type="button" value="Continue" onclick="loadCall()">
+    </div>
+    <div id="loading" style="display: none;margin-top: 10%;">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/b6e0b072897469.5bf6e79950d23.gif" style="width: 30%;" alt='Loading...'><br>
+    <a style="color: white;font-size: x-large;">Processing...</a>
+    </div>
+    <div id="last" style="display: none;margin-top: 10%;">
+    <img src="https://media.tenor.com/6ZkJEn80W7kAAAAC/green-tick.gif" style="width: 30%;" alt='Loading...'><br>
+    <a style="color: white;font-size: x-large;">Transaction Successfull..!</a><br>
+    <input type="button" value="Back to Homepage" onclick="window.open('homepage.html','_self')">
+    </div>
+    </div>
+</body>
+</html>

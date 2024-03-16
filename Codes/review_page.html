@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="frame.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f2f2f2;
+          margin: 0;
+          padding: 20px;
+        }
+        
+        h1 {
+          text-align: center;
+          color: #333;
+          margin-bottom: 30px;
+        }
+        
+        .review-container {
+          width: 80%;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #fff;
+          border: 1px solid #ccc;
+          margin-bottom: 20px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+        
+        .reviewer {
+          font-weight: bold;
+          color: #333;
+          font-size: 18px;
+          margin-top: 20px;
+        }
+        
+        .reviewer img {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-bottom: 10px;
+        }
+        
+        .rating {
+          color: #FFD700;
+          font-size: 24px;
+          margin-top: 10px;
+        }
+        
+        .comment {
+          margin-top: 10px;
+          color: #555;
+        }
+        
+        .button-container {
+          text-align: center;
+          margin-top: 30px;
+        }
+        
+        .button {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #333;
+          color: #fff;
+          text-decoration: none;
+          border-radius: 4px;
+          transition: background-color 0.3s ease;
+        }
+        
+        .button:hover {
+          background-color: #555;
+        }
+        
+        .divider {
+          width: 100%;
+          height: 1px;
+          background-color: #ccc;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+        
+        .footer {
+          text-align: center;
+          margin-top: 50px;
+          color: #777;
+        }
+        
+        .additional-info {
+          text-align: center;
+          margin-top: 30px;
+        }
+        
+        .additional-info h3 {
+          color: #333;
+          margin-bottom: 10px;
+        }
+        
+        .additional-info p {
+          color: #555;
+          line-height: 1.5;
+        }
+        
+        .work-section {
+          margin-top: 50px;
+          margin-bottom: 50px;
+        }
+        
+        .work-section h2 {
+          color: #333;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        
+        .work-section .work-item {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 20px;
+        }
+        
+        .work-section .work-item img {
+          width: 150px;
+          height: 150px;
+          object-fit: cover;
+          border-radius: 50%;
+          margin-right: 20px;
+        }
+        
+        .work-section .work-item .work-details {
+          flex-grow: 1;
+        }
+        
+        .work-section .work-item .work-title {
+          font-weight: bold;
+          color: #333;
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+        
+        .work-section .work-item .work-description {
+          color: #555;
+          line-height: 1.5;
+        }
+      </style>
+      
+</head>
+<body>
+    <div style="width: 100%;">
+        <img src="https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png" width="2%">
+        <div style="display: inline;padding-right: 1%;border-right: solid black 1px;">originsonlineservice@origins.com
+        </div>
+        <img src="https://png.pngtree.com/png-vector/20190909/ourmid/pngtree-phone-call-icon-vector-png-image_1725842.jpg"
+            width="2%">
+        <div style="display: inline;padding-right: 1%;border-right: solid black 1px">+91 99274828288</div>
+    </div>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Origins_logo.png" style="width: 8%;">
+        <a href="https://goo.gl/maps/kMsDzqQRuPp3CKqW8" target="_blank">
+            <img src="https://www.shutterstock.com/image-vector/pin-icon-trendy-flat-style-600w-734507887.jpg"
+                style="float: right;width:40px;"></a>
+        <a id="location" href="https://goo.gl/maps/3ryXE7CEGXNh41CBA" target="_blank">Origins Cosmetics<br>NCR
+            Region</a>
+    </div>
+    <div id="Nav_bar" style="background-color: black;">
+        <a href="homepage.html" class="Nav_ele">Home</a>
+        <a href="aboutpage.html" class="Nav_ele">About</a>
+        <a href="exp.html" class="Nav_ele">Products</a>
+        <a href="orderpage.html" class="Nav_ele">Order page</a>
+        <a href="helpdesk.html" class="Nav_ele">Helpdesk</a>
+        <a href="Locations.html" class="Nav_ele">Stores</a>
+        <a href="login.html" class="Nav_ele">Login</a>
+        <a href="register.html" class="Nav_ele">Register</a>
+    </div><hr> <h1 style="margin-top: 12px;">Reviews</h1>
+  
+    <div class="review-container">
+      <img src="https://th.bing.com/th/id/OIP.y0XgqZSOkzrvCysu7BN2dAHaE8?w=296&h=197&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="John Doe"  style="width: 80px; height: auto;">
+      <div class="reviewer">John Doe</div>
+      <div class="comment">
+        <p>Great product! I'm really satisfied with my purchase. It has improved my skin's texture and provided a healthy glow.</p>
+      </div>
+      <div class="rating">★★★★★</div>
+    </div>
+    
+    <div class="review-container">
+      <img src="https://th.bing.com/th/id/OIP.7VThHu2VS76jFvN5_5gnlgHaEW?w=276&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="Jane Smith"  style="width: 80px; height: auto;">
+      <div class="reviewer">Jane Smith</div>
+      <div class="comment">
+        <p>The product is good, but it could be better. Overall, a decent buy. It moisturizes my skin well, but I haven't seen significant improvements in my skin tone.</p>
+      </div>
+      <div class="rating">★★★★☆</div>
+    </div>
+    
+    <div class="review-container">
+      <img src="https://th.bing.com/th/id/OIP.Ck2Usj84bIh_SiI2QJ7b-QHaEp?w=257&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="Mark Johnson"  style="width: 80px; height: auto;">
+      <div class="reviewer">Mark Johnson</div>
+      <div class="comment">
+        <p>It's an okay product. Not too impressed, but not terrible either. It didn't provide significant results for me, but it didn't cause any negative reactions either.</p>
+      </div>
+      <div class="rating">★★★☆☆</div>
+    </div>
+    
+    <div class="review-container">
+      <img src="https://th.bing.com/th?q=People+Women&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.1&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="Emily Davis"  style="width: 80px; height: auto;">
+      <div class="reviewer">Emily Davis</div>
+      <div class="comment">
+        <p>Amazing! This product exceeded my expectations in every way. It has transformed my skin and given me a healthy, radiant glow.</p>
+      </div>
+      <div class="rating">★★★★★</div>
+    </div>
+    
+    <div class="review-container">
+      <img src="https://th.bing.com/th/id/OIP.0ro9HJj2WX5uJGQDS1YWiAHaJQ?w=149&h=186&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="David Thompson"  style="width: 80px; height: auto;">
+      <div class="reviewer">David Thompson</div>
+      <div class="comment">
+        <p>Not very satisfied with the product. It has some issues. I experienced breakouts and irritation after using it.</p>
+      </div>
+      <div class="rating">★★☆☆☆</div>
+    </div>
+    
+    <div class="review-container">
+      <img src="https://th.bing.com/th/id/OIP.kTjW223SWxUWSDTLCfGMOAAAAA?w=213&h=186&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="Olivia Johnson" style="width: 80px; height: auto;">
+      <div class="reviewer">wolf cut</div>
+      <div class="comment">
+        <p>Excellent quality! I highly recommend this product. It has improved my skin's texture and helped fade acne scars.</p>
+      </div>
+      <div class="rating">★★★★★</div>
+    </div>
+    
+    <div class="review-container">
+      <img src="https://th.bing.com/th/id/OIP.bV-BYcHq2Ri1U_ERyMCkYQHaLG?w=122&h=185&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="Daniel Smith"  style="width: 80px; height: auto;">
+      <div class="reviewer">Daniel Smith</div>
+      <div class="comment">
+        <p>Couldn't be happier with my purchase. It works well and looks great. It has become an essential part of my skincare routine.</p>
+      </div>
+      <div class="rating">★★★★★</div>
+    </div>
+    
+    <div class="review-container">
+      <img src="https://th.bing.com/th/id/OIP.jhv1IkSOmvTMq1SPKFNo3gHaE8?w=234&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="Amy Wilson"  style="width: 80px;">
+      <div class="reviewer">Amy Wilson</div>
+      <div class="comment">
+        <p>Couldn't be happier with my purchase. It exceeded my expectations. My skin feels nourished and rejuvenated after using it.</p>
+      </div>
+      <div class="rating">★★★★★</div>
+    </div>
+   
+     
+    <div class="work-section">
+      <h2>Our new work</h2>
+      
+      <div class="work-item">
+        <img src="https://www.origins.com/media/export/cms/spp/checks_milk_oil_cleanser_fy23/MOC-Double-Cleanse-Desktop-Cover.jpg" alt="Work 1">
+        <div class="work-details">
+          <div class="work-title">Milk oil</div>
+          <div class="work-description">A quick shake of the bottle turns this bi-phase formula into a milky cleanser and makeup remover. Rice Oil and Almond Oil help dissolve impurities and makeup, while Squalane and plant-derived Glycerin help soften skin</div>
+        </div>
+      </div>
+      
+      <div class="work-item">
+        <img src="https://www.origins.com/media/export/cms/spp/mm_concentrate_fy23/desktop/MMRSC-SPP-IncredientPillars-Desktop-2.jpg" alt="Work 2">
+        <div class="work-details">
+          <div class="work-title">Mega-Mushroom Restorative</div>
+          <div class="work-description">Created for those times when skin needs extra care, this intensive treatment helps strengthen skin’s surface barrier in 1 use, helps the barrier recover faster*, and helps resist future barrier damage. Formulated with our Phyto-Powered Barrier Defense Complex—Brown Algae, Olive Oil, Pomegranate Sterols—to help support skin’s essential lipids; Molecular Mushroom Complex and Centella Asiatica to help soothe and reduce the look of redness; and Tremella Mushroom to support skin’s own ability to hold onto moisture.</div>
+        </div>
+      </div>
+      
+      <div class="work-item">
+        <img src="https://th.bing.com/th/id/OIP.uqOMRqv0Fv1r1iucFh-C2wHaE8?w=279&h=186&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="Work 3">
+        <div class="work-details">
+          <div class="work-title">Essentials To Lift & Firm</div>
+          <div class="work-description">Gives spring skin a total refresh. This Peptide serum reduces the look of lines and pores and gives a smoother, more lifted appearance; lifting cream helps firm and plumps away dry lines with hydration; and eye cream reduces the look of lines and wrinkles around the delicate eye area.
+        </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="divider"></div>
+    
+<br><br>
+   
+       
+    <div id='home_tail'>Location:<br>Origins Store, 20 Hudson Yards, New York,<br> NY 10001, United States<br>
+        QX3X+FM New York, USA<br>+121296726082<br><br>
+        <a href="https://www.instagram.com/origins/" class="tail_ele">
+            <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph-1200x1199.png" width="2%" style="padding-right:1% ;">Instagram</a>
+        <a href="https://www.facebook.com/Origins/" class="tail_ele">
+            <img src="623dd7d270712bdafc63c38a.png" width="2.5%"> Facebook</a>
+        <a href="https://www.youtube.com/@origins" class="tail_ele" style="border-right: none;">
+            <img src="https://cdn.logojoy.com/wp-content/uploads/20200406092725/youtube-icon.png" width="2.5%"> Youtube</a>
+            <br>
+            <p>© Copyright Origins Natural Resources, Inc.</p>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

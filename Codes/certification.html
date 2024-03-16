@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+  padding: 0;
+        }
+body{
+    background-color: #e2e2e2;
+}
+
+        #location {
+            text-decoration: none;
+            color: black;
+            float: right;
+            font-family: 'Brush Script MT', cursive;
+            font-size: larger;
+        }
+
+
+        #Nav_bar {
+            position: sticky;
+            top: 0;
+            text-align: center;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+
+        .Nav_ele {
+            margin-left: 0px;
+            text-decoration: none;
+            background-color: black;
+            color: silver;
+            font-family: 'Brush Script MT', cursive;
+            font-size: xx-large;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+        }
+
+        #home_tail {
+            text-align: center;
+            font-family: 'Brush Script MT', cursive;
+            background-color: black;
+            color: silver;
+            width: 100%;
+            font-size: large;
+            border-radius: 5px;
+            padding-top: 2%;
+        }
+        .tail_ele {
+            text-decoration: none;
+            background-color: black;
+            color: silver;
+            font-family: 'Brush Script MT', cursive;
+            font-size: x-large;
+            padding-left: 5%;
+            padding-right: 5%;
+            border-right: solid silver 2px;
+        }
+        .cert{
+            font-size: xx-large;
+            margin-top:2rem;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        .slid{
+            display: flex;
+            margin-top:3rem ;
+            margin-left: 2rem;
+            margin-right: 2rem;
+           
+
+        }
+        .image{
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2px;
+        }
+        .image img{
+            width: 190px;
+            height: auto;
+
+
+        }
+        .wrapper{
+            padding-left: 4px;
+border: 2px solid black;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+  
+        .wrapper h3{
+        text-align: center;
+   margin: 14px;
+
+        }
+
+    </style>
+    <link rel="stylesheet" href="frame.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div style="width: 100%;">
+        <img src="https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png" width="2%">
+        <div style="display: inline;padding-right: 1%;border-right: solid black 1px;">originsonlineservice@origins.com
+        </div>
+        <img src="https://png.pngtree.com/png-vector/20190909/ourmid/pngtree-phone-call-icon-vector-png-image_1725842.jpg"
+            width="2%">
+        <div style="display: inline;padding-right: 1%;border-right: solid black 1px">+91 99274828288</div>
+    </div>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Origins_logo.png" style="width: 8%;">
+        <a href="https://goo.gl/maps/kMsDzqQRuPp3CKqW8" target="_blank">
+            <img src="https://www.shutterstock.com/image-vector/pin-icon-trendy-flat-style-600w-734507887.jpg"
+                style="float: right;width:40px;"></a>
+        <a id="location" href="https://goo.gl/maps/3ryXE7CEGXNh41CBA" target="_blank">Origins Cosmetics<br>NCR
+            Region</a>
+    </div>
+    <div id="Nav_bar" style="background-color: black;">
+        <a href="homepage.html" class="Nav_ele">Home</a>
+        <a href="" class="Nav_ele">About</a>
+        <a href="" class="Nav_ele">Products</a>
+        <a href="" class="Nav_ele">Order page</a>
+        <a href="" class="Nav_ele">Helpdesk</a>
+        <a href="Locations.html" class="Nav_ele">Stores</a>
+        <a href="login.html" class="Nav_ele">Login</a>
+        <a href="register.html" class="Nav_ele">Register</a>
+        <a href="" class="Nav_ele"></a>
+    </div>
+<div class="cert" >Certification</div>
+<div class="slid" >
+    <div class="image"><img src="data:image/jpeg;base64,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" alt="peta"></div>
+    <div class="wrapper"><h3 >certified by peta</h3>
+    <p>
+        We are proud to announce that our company has been certified by PETA (People for the Ethical
+        Treatment of Animals) as a <mark>cruelty- free and vegan </mark>brand. This certification represents
+        our commitment to producing products that are free from animal testing and animal-derived
+        ingredients.
+    </p></div>
+</div>
+<div class="slid" >
+    <div class="wrapper" style="background-color: #fcf8e3;">
+        <h3  >THE UNITED STATES Department OF Agriculture</h3>
+        <p>The United States Department of Agriculture (USDA) issues this certification on products that have 95 percent or more organic content. This means that the product has been produced through approved methods and that synthetic fertilizers, sewage sludge, irradiation, and genetic engineering have not been used.
+                
+        <br><br> i )  100% Organic
+           <br> ii)  Organic (contains at least 95% organically-produced ingredients)
+            
+           <br>    iii) Made with Organic ingredients (contains at least 70% organically-produced ingredients + 
+           <br> iv)  product label can list up to three of the organic ingredients)
+            
+        </p>
+    </div>
+    <div class="image"> <img src="https://th.bing.com/th/id/OIP.CjD7bZZN-Hr6VlNFLO65PQHaHa?w=188&h=188&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="usda certification "></div>
+</div>
+<div class="slid">
+    <div class="image"> <img src="https://naturecert.org/wp-content/uploads/2021/01/1.png" alt="nature certification"> </div>
+    <div class="wrapper"> <h3 >NATURE CERTIFICATION
+    </h3>
+    <p>The NATRUE Standard includes, for example, requirements for a product to contain specific percentages of natural and naturally-derived ingredients, to be free of GMO and petrochemical-derived ingredients, to be microplastics free, to contain only RSPO palm oil (see below for that mark) and for 75% of a brand’s product range to be certified. NATRUE is one of the common marks Formula Botanica graduate brands attain.</p>
+
+</div>
+</div>
+<div class="slid" style="margin-bottom: 2rem;">
+    <div class="wrapper" style="background-color: #fcf8e3;"> 
+        <h3   >PLASTIC FREE</h3>
+        <p>Plastic Free™️ certification is managed by A Plastic Planet, a campaigning organisation founded in 2017 with the goal of reducing our plastic production and consumption and promoting the development and offer of plastic-free alternatives. A Plastic Planet aims to cut through the confusion of plastics’ terminology and make clear what constitutes undesirable, non-biodegradable plastic; even so-called bio-plastics take hundreds of years to degrade and then may remain as nano- or micro plastics.</p>
+    </div>
+    <div class="image">
+        <img src="https://th.bing.com/th/id/OIP.uDbLZv78_S8JlctZ63bzxgHaEH?w=299&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="plastic free ">
+    </div>
+</div>
+
+
+
+
+
+    <div id='home_tail'>Location:<br>Origins Store, 20 Hudson Yards, New York,<br> NY 10001, United States<br>
+        QX3X+FM New York, USA<br>+121296726082<br><br>
+        <a href="https://www.instagram.com/origins/" class="tail_ele">
+            <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph-1200x1199.png"
+                width="2%" style="padding-right:1% ;">Instagram</a>
+        <a href="https://www.facebook.com/Origins/" class="tail_ele">
+            <img src="623dd7d270712bdafc63c38a.png" width="2.5%"> Facebook</a>
+        <a href="https://www.youtube.com/@origins" class="tail_ele" style="border-right: none;">
+            <img src="https://cdn.logojoy.com/wp-content/uploads/20200406092725/youtube-icon.png" width="2.5%">
+            Youtube</a>
+        <br>
+        <p>© Copyright Origins Natural Resources, Inc.</p>
+    </div>
+
+</body>
+
+</html>

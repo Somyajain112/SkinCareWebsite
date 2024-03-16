@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login-Origins</title>
+    <style>
+        table{
+            background-color:black;
+            border-radius: 5px;
+        }
+        td{
+            background-color: black;
+            width: 30%;
+            text-align: center;
+            font-family:'Poppins', sans-serif ;
+            border-radius: 5px;
+            font-size:x-large;
+        }
+        body{
+            background-color: silver;
+            color: silver;
+            margin-top: 5%;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        input{
+            border-radius: 5px;
+            background-color:black;
+            color: silver;
+            border: solid silver 1px;
+        }
+        label{
+            float: left;
+            padding-left: 28%;
+            padding-top: 2%;
+        }
+    </style>
+    <script>
+        let Pass={
+            'Harsha':'12213091',
+            'Rohit':'12213101',
+            'Somya':'12213085',
+        }
+            function validateForm() {
+                let name = document.forms["Form"]["Userid"].value;
+                let Pwd = document.forms["Form"]["Pwd"].value;
+    
+                if (name == "") {
+                    alert("Please enter your Username.");
+                    return false;
+                }
+                if ( Pwd== "") {
+                    alert("Please enter your password.");
+                    return false;
+                }
+                if(Pass[name]!=Pwd){
+                    alert('Please enter correct Username/Password.');
+                    return false;
+                }
+                window.open("homepage.html","_blank");
+			    return true;
+            }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <img src="valeriia-miller-_42NKYROG7g-unsplash.jpg" width="100%" style="border-radius: 5px;" alt="Skincare">
+            </td>
+            <td>
+               <big> Origins Skin Products</big>
+            <p style="font-size: large;">Hello Again! Please enter the following:</p><br>
+            <form name="Form" onsubmit="return validateForm()">
+            <label for="Userid">Username:</label><br>
+            <input type="text" id="Userid" name="Userid"><br>
+            <label for="Pwd">Password:</label><br>
+            <input type="password" id="Pwd" name="Pwd"><br>
+            <input type="submit" value="Login" style="background-color: #000000;color: silver;border: solid 2px silver;margin: 2%;padding: 2% ;border-radius: 10px;font-family: 'Poppins', sans-serif;">
+            <p style="font-size: large;">Register for a new account here, <a href="register.html">Register</a></p>
+            </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

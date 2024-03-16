@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>face serum</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+          #location {
+            text-decoration: none;
+            color: black;
+            float: right;
+            font-family: 'Brush Script MT', cursive;
+            font-size: larger;
+        }
+
+
+        #Nav_bar {
+            
+            top: 0;
+            text-align: center;
+            border-top-right-radius:5px ;
+            border-top-left-radius:5px ;
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+
+        .Nav_ele {
+            margin-left: 0px;
+            text-decoration: none;
+            background-color: black;
+            color: silver;
+            font-family: 'Brush Script MT', cursive;
+            font-size: xx-large;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+        }
+        #home_tail{
+            text-align: center;
+            font-family: 'Brush Script MT', cursive;
+            background-color: black;
+            color: silver;
+            width: 100%;
+            font-size: large;
+            border-radius: 5px;
+            padding-top: 2%;
+        }
+            .tail_ele{
+            text-decoration: none;
+            background-color: black;
+            color: silver;
+            font-family: 'Brush Script MT', cursive;
+            font-size: x-large;
+            padding-left: 5%;
+            padding-right: 5%;
+            border-right: solid silver 2px;
+        }
+    </style>
+    <link rel="stylesheet" href="frame.css">
+</head>
+<body> <div style="width: 100%;">
+    <img src="https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png" width="2%">
+    <div style="display: inline;padding-right: 1%;border-right: solid black 1px;">originsonlineservice@origins.com
+    </div>
+    <img src="https://png.pngtree.com/png-vector/20190909/ourmid/pngtree-phone-call-icon-vector-png-image_1725842.jpg"
+        width="2%">
+    <div style="display: inline;padding-right: 1%;border-right: solid black 1px">+91 99274828288</div>
+</div>
+<div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Origins_logo.png" style="width: 8%;">
+    <a href="https://goo.gl/maps/kMsDzqQRuPp3CKqW8" target="_blank">
+        <img src="https://www.shutterstock.com/image-vector/pin-icon-trendy-flat-style-600w-734507887.jpg"
+            style="float: right;width:40px;"></a>
+    <a id="location" href="https://goo.gl/maps/3ryXE7CEGXNh41CBA" target="_blank">Origins Cosmetics<br>NCR
+        Region</a>
+</div>
+<div id="Nav_bar" style="background-color: black;">
+    <a href="homepage.html" class="Nav_ele">Home</a>
+    <a href="aboutpage.html" class="Nav_ele">About</a>
+    <a href="exp.html" class="Nav_ele">Products</a>
+    <a href="orderpage.html" class="Nav_ele">Order page</a>
+    <a href="helpdesk.html" class="Nav_ele">Helpdesk</a>
+    <a href="Locations.html" class="Nav_ele">Stores</a>
+    <a href="login.html" class="Nav_ele">Login</a>
+    <a href="register.html" class="Nav_ele">Register</a>
+</div>
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="product-box">
+                <div class="all-images" >
+                <div class= "small-images">
+                    <img src="https://www.origins.com/media/export/cms/products/1000x1000/origins_sku_0J3M01_1000x1000_3.jpg" onclick="clicking(this)"  alt="small photo1">
+                    <img src="https://www.origins.com/media/export/cms/products/1000x1000/origins_sku_0J3M01_1000x1000_1.jpg" onclick="clicking(this)" alt="small photo2">
+                    <img src="https://www.origins.com/media/export/cms/products/1000x1000/origins_sku_0J3M01_1000x1000_2.jpg" onclick="clicking(this)" alt="small photo 3">
+                    <img src="https://www.origins.com/media/export/cms/products/1000x1000/origins_sku_0J3M01_1000x1000_0.jpg" onclick="clicking(this)" alt="small photo 4">
+                </div>
+              <div class="main-images">
+                 <img src="https://www.origins.com/media/export/cms/products/1000x1000/origins_sku_0J3M01_1000x1000_3.jpg" id="imagebox">
+              </div> 
+            </div>
+            </div>
+            <div class="text">
+                <div class="content" style="padding-left: 3rem;">
+                    <p class="brand"  style="font-size: xx-large; font-weight: bold;">SUPER SPOT REMOVER™</p>
+                    <p style="font-size: x-large;"> Acne Treatment Gel With Salicylic Acid</p>
+<span style="font-size: x-large;font-weight: bold;">key ingredent :</span><span style="font-size: large;">   Salicylic Acid</span>
+<br><br><br><span style="font-size: x-large;font-weight:bold;">SKIN TYPES : </span><span style="font-size: large;font-weight: large;">  Normal, Oily, Combination</span>
+<br><br><br><span style="font-size: x-large;font-weight:bold;">BENEFIT :</span><span style="font-size: large;font-weight: large;">Acne & Blackhead Reduction</span>
+                    <h2></h2>
+                    <div class="review">
+                        <span>(4.6)</span>
+                        <span class="fa fa star"></span>
+                    </div>
+ <div class="price-box">
+    <p class="price"><strike>&#8377;999</strike></p>
+<p class="Price">&#8377;777</p>
+
+ </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+ <Script>
+    function clicking(smallimg){
+        var fullImg= document.getElementById("imagebox");
+        fullImg.src=smallimg.src
+    }
+     
+ </Script>
+
+ <div class="write">
+    <h3 style="text-align: center;margin-bottom:8px;">Details </h3>
+    <h4 style="margin-bottom: 8px;">Vegan :</h4>
+        <p> (Free-of animal derived ingredients)</p>
+
+        <h4 style="margin-bottom: 8px;">What It Is:</h4>
+<p>Our acne treatment gel with 1.5% Salicylic Acid for on-the-spot, targeted treatment––wherever you go.</p>
+
+<h4 style="margin-bottom: 8px;">What It Does:</h4>
+<p>The blemish-fighting formula penetrates pores to help clear them of debris, helps fight acne blemishes including blackheads, and helps prevent new acne from forming by absorbing the excess oils that can lead to blemishes.</p>
+<h4 style="margin-bottom: 8px;">We Formulate Without:</h4>
+<p>1,500+ ingredients in compliance with the EU’s stringent regulations. In addition, we are also free of: Parabens, phthalates, formaldehyde and formaldehyde-releasing agents, sodium lauryl sulfate (SLS), mineral oil, petrolatum, paraffin, diethanolamine (DEA), polyethylene beads and animal ingredients </p>
+</div>
+ <div id='home_tail'>Location:<br>Origins Store, 20 Hudson Yards, New York,<br> NY 10001, United States<br>
+    QX3X+FM New York, USA<br>+121296726082<br><br>
+    <a href="https://www.instagram.com/origins/" class="tail_ele">
+        <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph-1200x1199.png" width="2%" style="padding-right:1% ;">Instagram</a>
+    <a href="https://www.facebook.com/Origins/" class="tail_ele">
+        <img src="623dd7d270712bdafc63c38a.png" width="2.5%"> Facebook</a>
+    <a href="https://www.youtube.com/@origins" class="tail_ele" style="border-right: none;">
+        <img src="https://cdn.logojoy.com/wp-content/uploads/20200406092725/youtube-icon.png" width="2.5%"> Youtube</a>
+        <br>
+        <p>© Copyright Origins Natural Resources, Inc.</p>
+</div>
+    
+</body>
+</html>
